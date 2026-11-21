@@ -1,0 +1,15 @@
+# raw downloads: keep small structured files for provenance, skip bulky page dumps and binaries
+fishing/research/raw/**/*.html
+fishing/research/raw/**/*.htm
+fishing/research/raw/**/*.pdf
+fishing/research/raw/**/*.png
+fishing/research/raw/**/*.jpg
+fishing/research/raw/**/*.zip
+fishing/research/raw/**/*.tif
+fishing/research/raw/**/*.pbf
+fishing/research/raw/**/*.xlsx
+__pycache__/
+*.pyc
+# raw downloads stay local: third-party pages embed API keys that trip GitHub push protection.
+# A manifest (path, bytes, sha256) is committed instead: fishing/research/raw_manifest.tsv
+fishing/research/raw/
