@@ -1,6 +1,6 @@
 # Recent intel - tackle shops, clubs, matches, competitions (workstream 8)
 
-Status: COMPLETE for what is reachable (final update ~16:20 UTC 21 Nov 2026). Session date under study: Sunday 22 Nov 2026.
+Status: FULL-DEPTH PASS IN PROGRESS (first draft completed ~16:20 UTC 21 Nov 2026 by an earlier, token-limited pass; full-depth verification and extension started 17:03 UTC 21 Nov 2026 - see sections 4 onward; inline fixes are marked "[CORRECTED in full-depth pass: was X]"). Session date under study: Sunday 22 Nov 2026.
 All access times are UTC on Saturday 21 Nov 2026. Raw downloads are in `fishing/research/raw/intel_shops_clubs/` (filename carries the fetch time).
 
 Grades: A = official/primary instrument; B = club / shop / magazine first-hand record; C = forum/social/anecdote; D = my inference (flagged).
@@ -48,7 +48,7 @@ MBAS match results inside the window:
 - **Greenwood Rosebowl, Sun 1 Nov 2026** (rover): won by Ryan Ladd, LSD 1130 g (i.e. nothing better than a dogfish was weighed on a daytime-to-dusk rover).
 - Shore Knockout semi-finals fished 9 Sep - 8 Nov; final Shaun Parkinson v Ryan Ladd runs 11 Nov - 31 Dec 2026.
 
-MBAS BOAT entries in the window (context for what is in the bay, not shore): 18 Oct tope 25,628 g and 19,278 g, bull huss 6972 g (Bite Adventures charter, Penzance); 1 Nov spurdog 5783 g; 7 Nov Couch's bream 4082 g (new club C&R boat record, "aboard Bite Adventures"). Late Sept: Atlantic bonito 3394 g, 3002 g, 2198 g (19-24 Sep, boat, "weighed officially").
+MBAS BOAT entries in the window (context for what is in the bay, not shore): 18 Oct tope 25,628 g and 19,278 g, bull huss 6972 g (log says only "Boat") [CORRECTED in full-depth pass: was "(Bite Adventures charter, Penzance)" - the club log does not name the boat for the 18 Oct fish; only the 7 Nov Couch's bream is stated as "Caught aboard Bite Adventures"]; 1 Nov spurdog 5783 g; 7 Nov Couch's bream 4082 g (new club C&R boat record, "aboard Bite Adventures"). Late Sept: Atlantic bonito 3394 g, 3002 g, 2198 g (19-24 Sep, boat, "weighed officially").
 
 ### 1b. MBAS fixtures around the session date (revealed preference)
 
@@ -65,9 +65,9 @@ Sources (all accessed 15:21 UTC 21 Nov 2026, Grade B): https://mountsbay.weebly.
 **Loe Bar Competition (fixed venue, last weekend of November) - results by year**
 | Year | Result (verbatim detail) |
 |---|---|
-| 2025 (late Nov; Fri 5pm - Sun 7pm) | 1st Shaun Parkinson small-eyed ray 4447 g; 2nd Shaun Parkinson LSD 1070 g; 3rd Lewis Kaute whiting 510 g; 4th Lewis Kaute LSD 980 g |
+| 2025 (Fri 28 Nov 5pm - Sun 30 Nov 7pm; placed fish dated 29 Nov 2025 in the November 2025 sheet) | 1st Shaun Parkinson small-eyed ray 4447 g; 2nd Shaun Parkinson LSD 1070 g; 3rd Lewis Kaute whiting 510 g; 4th Lewis Kaute LSD 980 g |
 | 2024 (c. 16-17 Nov) | 1st Ed Polley LSD 955 g (76.584%); 2nd Pete Kessell LSD 825 g (66.159%); 3rd Ed Polley whiting 250 g (40.064%) |
-| 2023 (late Nov) | Ed Polley 1st and 2nd: LSD 1029 g (82.5%) and whiting 483 g (77.4%). "Quite a lot of small fish caught but these were the only two fish over the minimum size." |
+| 2023 (mid Nov: the two placed fish are dated 16 Nov 2023 in the November 2023 recorder sheet) [CORRECTED in full-depth pass: was "2023 (late Nov)"] | Ed Polley 1st and 2nd: LSD 1029 g (82.5%) and whiting 483 g (77.4%). "Quite a lot of small fish caught but these were the only two fish over the minimum size." |
 -> Loe Bar in late November = dogfish + whiting with an occasional small-eyed ray (one 4.4 kg ray in three years). Modest by weight.
 
 **Other MBAS autumn match results**
@@ -78,7 +78,7 @@ Sources (all accessed 15:21 UTC 21 Nov 2026, Grade B): https://mountsbay.weebly.
 - Sept/Oct Bass comp: 2025 by length - 64 cm, 52 cm, 50 cm, 48 cm; 2024 - 1928 g, 1685 g, 1500 g, 1110 g, 800 g; 2023 - winner 2595 g. (2026's 3120 g / 3068 g / 2140 g is the best set of the four years -> 2026 is a comparatively GOOD autumn for bass size in the MBAS catchment. D - inference from four years of one club.)
 
 **Individual shore fish logged 20 Oct - 31 Dec in analogue years (date, species, weight)**
-- 2025: 24 Oct small-eyed ray 4220 g ("A good night on the rays"); 26 Oct scad 300 g, LSD 880 g, mackerel 295 g; 29/30 Oct cuckoo wrasse 500 g, pouting 350 g; 7 Nov conger 6404 g; 10 Nov garfish 372 g; 16 Nov bass 1890 g, **cod 1050 g** (Edd Polley), LSD 970 g, LSD 920 g; 17 Nov black bream 1219 g (boat? - "Robbie G", not flagged); 21 Nov bull huss 4700 g, pouting 470 g; 22 Nov three-bearded rockling 720 g, shore rockling 286 g; 25 Nov three-bearded rockling 400 g; 28 Nov bass 2080 g; 6 Dec bass 2720 g; 7 Dec flounder 625 g; 28 Dec LSD x4, small-eyed ray 4060 g, whiting 605/470/410 g; 29 Dec bull huss 5975 g; 31 Dec whiting 370 g.
+- 2025: 24 Oct small-eyed ray 4220 g ("A good night on the rays"); 26 Oct scad 300 g, LSD 880 g, mackerel 295 g; 29/30 Oct cuckoo wrasse 500 g, pouting 350 g; 7 Nov conger 6404 g; 10 Nov garfish 372 g; 16 Nov bass 1890 g, **cod 1050 g** (Edd Polley), LSD 970 g, LSD 920 g; 17 Nov black bream 1219 g ("Robbie G") - this is a BOAT fish: the November 2025 recorder sheet lists it as Rob Griffiths, Boat, 16 Nov 2025, 1.22 kg [CORRECTED in full-depth pass: was "(boat? - 'Robbie G', not flagged)"]; 21 Nov bull huss 4700 g, pouting 470 g; 22 Nov three-bearded rockling 720 g, shore rockling 286 g; 25 Nov three-bearded rockling 400 g; 28 Nov bass 2080 g; 6 Dec bass 2720 g; 7 Dec flounder 625 g; 28 Dec LSD x4, small-eyed ray 4060 g, whiting 605/470/410 g; 29 Dec bull huss 5975 g; 31 Dec whiting 370 g.
 - 2024: 20 Oct LSD 1304 g; 21/22 Oct bass 1320 g; 27 Oct red mullet 575 g; 30/31 Oct conger 5950 g; 2 Nov bass 840 g; 8 Nov LSD 920 g, 815 g; 11/12 Nov conger 6650 g, LSD 1255 g, tub gurnard 110 g; 16-17 Nov LSD 955/825/800 g, whiting 250 g; 19-20 Nov bass 1280 g, 745 g; 25/26 Nov LSD 1191 g, bass 1540 g ("Storm Bert makes fishing difficult"); 10-15 Dec LSD 964 g, whiting 354 g, bass 2300 g; 22-23 Dec bass 1885 g, flounder 475 g; 29 Dec whiting 625 g, bull huss 5050 g, small-eyed rays 3540 g and 2940 g, thornback ray 2800 g, mackerel x4 (383-515 g), LSD x7.
 - 2023: 22 Oct small-eyed ray 3969 g and 3000 g, LSD 1361 g, red mullet 230 g, whiting 376 g; 5/6 Nov mackerel 575 g; 8 Nov small-eyed ray 3200 g, turbot 570 g; 12 Nov ballan wrasse 2041 g, small-eyed ray 3856 g, whiting 360 g; 16 Nov LSD 1145 g, 1029 g, whiting 480 g; 22 Nov LSD 985 g; 15 Dec whiting 711 g; 29 Dec whiting x5 (425-747 g), LSD x2, bull huss 4230 g, mackerel 375 g, 345 g.
 

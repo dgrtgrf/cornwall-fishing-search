@@ -14,7 +14,7 @@ const ROOT = '/home/user/cornwall-fishing-search'
 const PREAMBLE = `CONTEXT (read fully). You are one research stream in a large, deliberately exhaustive study:
 "Find the single best shore-fishing spot in Cornwall (UK) - the entire Cornish shoreline including every estuary and the Isles of Scilly - for one session on SUNDAY 22 NOVEMBER 2026 (any window within the 24 h; local time = GMT = UTC), any species, any method."
 It is purely hypothetical: nobody is going. Locations are judged SOLELY on fishing quality. Ignore human factors completely (access, travel, danger, survivability, comfort, whether a person could physically stand there). Assume a superhuman angler who can reach and fish any point where land meets water - cliffs, islands, offshore rocks, reefs, harbour walls - in any conditions. Weather and sea matter only through their effect on fish and on presenting a bait or lure.
-NOW: Saturday 21 November 2026, about 16:10 UTC. The session date is TOMORROW. The repository root is ${ROOT}.
+NOW: Saturday 21 November 2026, ${(args && args.now) || 'about 17:15 UTC'}. The session date is TOMORROW. The repository root is ${ROOT}.
 
 HARD RULES
 1. Never invent a tide time, forecast figure, catch report, regulation, coordinate or any other fact. Every figure must carry: source name + URL, the time (UTC) you accessed it, and the data's own date / model run / publication date. If something cannot be found after genuinely trying several sources, write "NOT FOUND" and list what you tried.
@@ -24,7 +24,8 @@ HARD RULES
 5. Files: write ONLY inside ${ROOT}/fishing/research/ and only the file(s) assigned to you below (create directories as needed). Save raw API responses / downloads you rely on under ${ROOT}/fishing/research/raw/<your-stream-key>/ with the fetch time in the filename. Do not modify other streams' files. Do not run git commands that change state (no add / commit / push / checkout / stash).
 6. Write your file early and update it after every few findings, so that partial work survives if you are interrupted (an earlier run of every stream WAS interrupted by a usage limit at about 15:25 UTC).
 7. RESUME: before doing anything else, check whether your assigned file(s) already exist and list ${ROOT}/fishing/research/raw/ for a directory belonging to your stream (same key, or a similar name). If they exist, read them and CONTINUE from that state - reuse the saved raw downloads, keep what is already written, do not start again from scratch.
-8. TOKEN ECONOMY (strict): usage limits are tight. Never dump whole web pages or large JSON into your context. Save every download to disk and extract only what you need with python / grep / jq, printing short excerpts (aim for under 150 lines per tool output). Prefer one scripted batch of fetches over many single calls. Do not re-read files you have just written. Stop when further searching stops yielding new information.
+8. DEPTH, NOT ECONOMY: there is no token budget to protect. Never stop early or thin your work to save tokens. The only practical constraint is your own context window: save every download to disk and pull out what you need with python / grep / jq instead of pasting whole pages or large JSON into the conversation, so that you can keep going for longer.
+9. ACCESS BOUNDARIES: if a site refuses automated access (bot challenge, HTTP 403, login wall, paywall), record it as INACCESSIBLE with the URL and move on. Do not try to get round a refusal in any way: no web-archive or cached copies of the refusing site, no proxies or mirrors, no spoofed browser fingerprints, no credential or paywall bypass. (Rendering an openly served JavaScript page with Playwright is fine; using a browser to defeat a bot challenge is not.)
 
 TOOLS: Bash (curl works through a preconfigured proxy; never disable TLS verification; on TLS or proxy errors read /root/.ccr/README.md), python3 (pip install is allowed), Chromium + Playwright are pre-installed for JavaScript-rendered pages (node: require('playwright') works from any directory, chromium.launch() needs no options; do NOT run "playwright install"). WebSearch / WebFetch may be deferred tools: call ToolSearch with query "select:WebSearch,WebFetch" first to load whichever exist. If a site blocks automated fetches, use another source rather than hammering it. Put no personal details in any request; use a generic User-Agent.
 Endpoints verified reachable at 15:06 UTC today: api.open-meteo.com (forecast API with many models; ensemble-api.open-meteo.com; archive-api.open-meteo.com), marine-api.open-meteo.com, easytide.admiralty.co.uk/Home/GetPredictionData?stationId=NNNN (UKHO predictions as JSON; 0002 returned Newlyn-area data covering 20 Nov onward), environment.data.gov.uk/flood-monitoring (EA river levels, rainfall, tide gauges), ows.emodnet-bathymetry.eu, ogcapi.bgs.ac.uk, html.duckduckgo.com. The main Overpass server failed; maps.mail.ru/osm/tools/overpass/api/interpreter worked.
@@ -76,7 +77,7 @@ const GROUPS = {
 4. SURGE: the latest NTSLF surge-model forecast values (read the plotted values or underlying data via Playwright network capture) for Newlyn, Plymouth, St Mary's, Ilfracombe at each 22 Nov HW and LW; note the run time.
 5. LATEST BUOY STATE (fresh pull): Channel Coastal Observatory real-time values for Perranporth, Porthleven, Penzance, Looe Bay, St Mary's Sound; Sevenstones 62107.`,
       },
-      { key: 'numeric_verify', title: 'ADVERSARIAL VERIFICATION of the orchestrator-built numeric files', files: 'fishing/research/tides.md, weather.md, sea_state.md, light_moon.md', model: 'opus',
+      { key: 'numeric_verify', title: 'ADVERSARIAL VERIFICATION of the orchestrator-built numeric files', files: 'fishing/research/tides.md, weather.md, sea_state.md, light_moon.md',
         prompt: `You are an ADVERSARIAL VERIFIER of four files the orchestrator generated by script: ${ROOT}/fishing/research/tides.md, weather.md, sea_state.md and light_moon.md (generators in ${ROOT}/fishing/tools/tides and ${ROOT}/fishing/tools/conditions; tidy data in ${ROOT}/fishing/research/data/). Do not read them end to end (they are long tables): grep the headline statements and sample rows. Your job is to REFUTE them:
 1. Tides: re-pull UKHO EasyTide JSON (https://easytide.admiralty.co.uk/Home/GetPredictionData?stationId=NNNN; ids are in tides.md section 1) for at least 8 ports and compare the 22 Nov HW/LW times and heights; confirm the times are GMT; recompute the range percentages in section 7 from the NTSLF levels quoted; check the surge reading in section 6 against the saved graphic ${ROOT}/fishing/research/raw/tides/ntslf_surgefc_newlyn_1.1_20261121T1522Z.png (view it) and the St Mary's residual claim against EA tide-gauge data.
 2. Weather: independently obtain the 22 Nov forecast from a source that is NOT Open-Meteo - MET Norway locationforecast (https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=..&lon=.., needs a descriptive User-Agent), the Met Office site forecast pages, or the Shipping/Inshore Waters forecasts - for at least six reference points, and compare hour by hour with the multi-model medians in weather.md section 3 (wind direction, speed in KNOTS, pressure, timing of the SE-to-W veer). Check the unit handling in the generator (requested wind_speed_unit=kn). Check the claim that pressure bottoms near 997-1000 hPa at 03-06 GMT and the veer timings in section 1.
@@ -161,7 +162,7 @@ Fix real errors directly in the files with "[CORRECTED by verifier: was X]" (and
   C: {
     streams: [
       {
-        key: 'species_sst', title: 'Sea temperature and seasonal fish behaviour (workstream 4)', verify: true, model: 'inherit', verifyModel: 'opus', files: 'fishing/research/species_sst.md',
+        key: 'species_sst', title: 'Sea temperature and seasonal fish behaviour (workstream 4)', verify: true, files: 'fishing/research/species_sst.md',
         prompt: `Deliver ${ROOT}/fishing/research/species_sst.md. Scope:
 1. Sea temperature now: observed SST around Cornwall and Scilly from buoys (Channel Coastal Observatory buoys, Cefas WaveNet / SmartBuoy, Sevenstones lightship 62107, Met Office buoys), satellite analyses (OSTIA / Copernicus / NOAA OISST / Met Office), Open-Meteo marine sea_surface_temperature at the STANDARD REFERENCE POINTS, and seaside temperature sites - with dates. Compare with the late-November climatology and with the trend over the last 4-6 weeks; give the north coast vs south coast vs Scilly vs estuary differences (estuaries cool faster; note recent air temperatures/frosts and river flows). State the anomaly and its sign.
 2. A species-by-species catalogue of EVERY species a shore angler could realistically (or even exceptionally) catch in Cornwall and Scilly in late November. At minimum cover: bass, pollack, coalfish, cod/codling, whiting, pouting, poor cod, haddock, ling, conger, bull huss, lesser spotted dogfish, spurdog, tope, smoothhound, small-eyed / thornback / blonde / spotted / undulate rays, turbot, brill, plaice, flounder, dab, sole, grey mullets (thick-lipped, thin-lipped, golden grey), ballan and other wrasses, gilthead bream, black bream, red mullet, gurnards, mackerel, scad, garfish, herring, sprat/sardine shoals (as bait-fish drivers), sandeel/launce, squid, cuttlefish, octopus (note the recent common-octopus boom if documented), three-bearded and shore rocklings, weevers, triggerfish, john dory, bluefin tuna and sharks close inshore, sea trout and salmon in the estuaries, shad, eels, mini-species (LRF targets). For each give: presence and feeding status in late November (with evidence from Cornwall specifically: CFSA and club records with dates, specimen lists, match results from past Novembers/Decembers, guide articles), typical and specimen sizes from the Cornish shore, habitat and depth, preferred tide / light / water clarity / sea state, temperature thresholds and what the CURRENT temperature implies, proven shore methods, baits and lures, and where in Cornwall it is best documented at this time of year.
@@ -248,6 +249,14 @@ Three researchers have written files in ${ROOT}/fishing/research/intel/ (forums_
 const DEFAULT_MODEL = args && args.model
 const DEFAULT_VERIFY_MODEL = args && args.verifyModel
 function withModel(opts, m) { return m && m !== 'inherit' ? Object.assign(opts, { model: m }) : opts }
+const DEEPEN = `
+
+FULL-DEPTH PASS (this overrides any impression that the work is finished). An earlier pass of this exact stream ran on a lower model tier, or was cut off, under a strict token-economy rule and stopped early; its output is on disk (your assigned file(s) and any raw/<key>/ directory). The user has since instructed: full model, no economising, depth is the priority. Treat what is on disk as a first draft by a junior researcher:
+(1) read it in full;
+(2) verify its key claims - open the cited sources where they are openly reachable, and fix or flag anything wrong, marking each fix inline as "[CORRECTED in full-depth pass: was X]";
+(3) then extend it substantially: pursue every lead, source type and place name in the brief that the first pass skipped or only sampled (it usually lists what it did not query), and keep going until three consecutive new search angles produce nothing new;
+(4) keep everything valid that is already there - the file must not shrink - and update the markdown / JSONL outputs in place;
+(5) for the known-marks streams, also read any second-pass file for your area in the same folder (G1 = north coast, G2 = south coast, G3 = West Penwith / Scilly / offshore rocks) and fold its content into your own outputs.`
 const groupKey = args && args.group
 const g = GROUPS[groupKey] ? Object.assign({}, GROUPS[groupKey]) : null
 if (!g) throw new Error('Unknown group: ' + groupKey + ' (expected one of ' + Object.keys(GROUPS).join(', ') + ')')
@@ -256,7 +265,7 @@ log('Phase 1 group ' + groupKey + ': ' + g.streams.map(s => s.key).join(', '))
 
 const out = await pipeline(
   g.streams,
-  s => agent(PREAMBLE + '\n\n=== YOUR WORKSTREAM: ' + s.title + ' ===\n' + s.prompt, withModel({ label: 'research:' + s.key, phase: 'Research' }, s.model || DEFAULT_MODEL)),
+  s => (args && args.verifyOnly) ? '(research stage skipped: verify the file(s) already on disk)' : agent(PREAMBLE + '\n\n=== YOUR WORKSTREAM: ' + s.title + ' ===\n' + s.prompt + ((args && args.deepen) ? DEEPEN : ''), withModel({ label: 'research:' + s.key, phase: 'Research' }, s.model || DEFAULT_MODEL)),
   (res, s) => {
     if (!res) return { key: s.key, research: null, verification: null }
     if (!s.verify) return { key: s.key, research: res, verification: null }
@@ -274,7 +283,7 @@ let merged = null
 if (g.merge) {
   phase('Merge')
   merged = await agent(
-    PREAMBLE + '\n\n' + g.merge.prompt + '\n\nThe researchers\' closing summaries:\n' +
+    PREAMBLE + '\n\n' + g.merge.prompt + ((args && args.deepen) ? '\n\nNOTE: the three source files have just been extended by a full-depth pass, and an earlier merged fishing/research/intel.md exists from the first pass. Rebuild intel.md from the extended source files, keeping every valid item and verification already in it; do not let it shrink.' : '') + '\n\nThe researchers\' closing summaries:\n' +
       out.filter(Boolean).map(o => '--- ' + o.key + ' ---\n' + (o.research || '(agent returned nothing)')).join('\n\n'),
     withModel({ label: 'merge:' + g.merge.key, phase: 'Merge' }, g.merge.model || DEFAULT_VERIFY_MODEL)
   )

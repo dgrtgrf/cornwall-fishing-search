@@ -1,0 +1,1426 @@
+[
+ {
+  "batch": 0,
+  "n": 31,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 4,
+   "DRY": 2
+  },
+  "lon": [
+   -4.5824,
+   -4.5323
+  ],
+  "lat": [
+   50.7681,
+   50.9377
+  ],
+  "first": "D336-01",
+  "places": [
+   "Lucky Hole",
+   "Cotton Beach",
+   "Yeol Mouth",
+   "Yeolmouth Cliff",
+   "Litter Mouth",
+   "Oldwalls"
+  ],
+  "max_P": 84.0,
+  "s2": true
+ },
+ {
+  "batch": 1,
+  "n": 49,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 16,
+   "ISLET": 7,
+   "FRAG": 1
+  },
+  "lon": [
+   -4.7337,
+   -4.5593
+  ],
+  "lat": [
+   50.6767,
+   50.7838
+  ],
+  "first": "D282-01",
+  "places": [
+   "Fern Tor",
+   "Beeny Cliff",
+   "Fire Beacon Point",
+   "Little Strand",
+   "The Strangles",
+   "Northern Door"
+  ],
+  "max_P": 54.0,
+  "s2": true
+ },
+ {
+  "batch": 2,
+  "n": 42,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 11,
+   "DRY": 6
+  },
+  "lon": [
+   -4.8345,
+   -4.7153
+  ],
+  "lat": [
+   50.5874,
+   50.6904
+  ],
+  "first": "D276-01",
+  "places": [
+   "Tartar Cove",
+   "Trambley Cove",
+   "Dennis Point",
+   "Darvis's Point",
+   "Trevalga Cliff",
+   "Lye Rock"
+  ],
+  "max_P": 67.0,
+  "s2": true
+ },
+ {
+  "batch": 3,
+  "n": 33,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 5,
+   "ISLET": 3
+  },
+  "lon": [
+   -4.9525,
+   -4.8197
+  ],
+  "lat": [
+   50.5295,
+   50.6046
+  ],
+  "first": "D255-02",
+  "places": [
+   "Rock Beach",
+   "Tregonce Cliff",
+   "Brea Beach",
+   "Guglane",
+   "Porthilly Cove",
+   "Sevensouls Rock"
+  ],
+  "max_P": 63.0,
+  "s2": true
+ },
+ {
+  "batch": 4,
+  "n": 53,
+  "groups": {
+   "MAIN": 25,
+   "FRAG": 12,
+   "ISLET": 12,
+   "DRY": 4
+  },
+  "lon": [
+   -4.9165,
+   -4.7989
+  ],
+  "lat": [
+   50.4856,
+   50.5437
+  ],
+  "first": "D253-01",
+  "places": [
+   "Pinkson Creek",
+   "Cant Cove",
+   "Oldtown Cove",
+   "Porthilly Cove",
+   "Tregonce Cliff"
+  ],
+  "max_P": 52.0,
+  "s2": true
+ },
+ {
+  "batch": 5,
+  "n": 63,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 24,
+   "ISLET": 11,
+   "FRAG": 3
+  },
+  "lon": [
+   -5.0097,
+   -4.8768
+  ],
+  "lat": [
+   50.5051,
+   50.5803
+  ],
+  "first": "D250-01",
+  "places": [
+   "Oldtown Cove",
+   "Tregonce Cliff",
+   "Pinkson Creek",
+   "Cant Cove",
+   "Porthilly Cove",
+   "Middle Merope Island"
+  ],
+  "max_P": 79.0,
+  "s2": true
+ },
+ {
+  "batch": 6,
+  "n": 72,
+  "groups": {
+   "ISLET": 35,
+   "MAIN": 25,
+   "DRY": 12
+  },
+  "lon": [
+   -5.0656,
+   -4.9957
+  ],
+  "lat": [
+   50.4548,
+   50.5578
+  ],
+  "first": "D231-01",
+  "places": [
+   "Park Head",
+   "Mackerel Cove",
+   "Totty Cove",
+   "Barras Bay",
+   "The Bull",
+   "Porth Mear"
+  ],
+  "max_P": 76.0,
+  "s2": true
+ },
+ {
+  "batch": 7,
+  "n": 42,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 7,
+   "FRAG": 6,
+   "DRY": 4
+  },
+  "lon": [
+   -5.1345,
+   -5.0325
+  ],
+  "lat": [
+   50.3909,
+   50.4649
+  ],
+  "first": "D213-01",
+  "places": [
+   "Sarvan",
+   "Jago's Island",
+   "Towan Head",
+   "Fruitful Cove",
+   "Salt Cove",
+   "Lusty Glaze"
+  ],
+  "max_P": 51.0,
+  "s2": true
+ },
+ {
+  "batch": 8,
+  "n": 38,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 11,
+   "DRY": 2
+  },
+  "lon": [
+   -5.1966,
+   -5.0763
+  ],
+  "lat": [
+   50.3248,
+   50.4152
+  ],
+  "first": "D211-01",
+  "places": [
+   "Porth Joke",
+   "Penhale Point",
+   "Monk",
+   "Ligger Point",
+   "Cligga Head",
+   "Pen a Gader"
+  ],
+  "max_P": 53.0,
+  "s2": true
+ },
+ {
+  "batch": 9,
+  "n": 48,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 17,
+   "DRY": 6
+  },
+  "lon": [
+   -5.3615,
+   -5.1801
+  ],
+  "lat": [
+   50.231,
+   50.3422
+  ],
+  "first": "D189-01",
+  "places": [
+   "Carn Gowla",
+   "Porth-cadjack Cove",
+   "The Horse",
+   "Sheep Rock",
+   "Landing Rock",
+   "St Agnes Head"
+  ],
+  "max_P": 53.0,
+  "s2": true
+ },
+ {
+  "batch": 10,
+  "n": 66,
+  "groups": {
+   "MAIN": 25,
+   "FRAG": 24,
+   "DRY": 10,
+   "ISLET": 7
+  },
+  "lon": [
+   -5.4598,
+   -5.3454
+  ],
+  "lat": [
+   50.1588,
+   50.2511
+  ],
+  "first": "D179-01",
+  "places": [
+   "Hayle Towans",
+   "Black Cliff",
+   "Hell's Mouth",
+   "Godrevy Point",
+   "The Cleaders",
+   "Porth Kidney Sands"
+  ],
+  "max_P": 68.0,
+  "s2": true
+ },
+ {
+  "batch": 11,
+  "n": 38,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 8,
+   "FRAG": 3,
+   "DRY": 2
+  },
+  "lon": [
+   -5.6255,
+   -5.4476
+  ],
+  "lat": [
+   50.1727,
+   50.2279
+  ],
+  "first": "D154-01",
+  "places": [
+   "Carn Porth",
+   "Pedn Olva",
+   "Treveal Cove",
+   "Gala Rocks",
+   "Tregerthen Cliff",
+   "Carn Crows"
+  ],
+  "max_P": 60.0,
+  "s2": true
+ },
+ {
+  "batch": 12,
+  "n": 56,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 20,
+   "DRY": 10,
+   "FRAG": 1
+  },
+  "lon": [
+   -5.7282,
+   -5.6073
+  ],
+  "lat": [
+   50.0692,
+   50.1858
+  ],
+  "first": "D141-01",
+  "places": [
+   "The Tribbens",
+   "Bo Cowloe",
+   "De Narrow Zawn",
+   "Trewellard North Cliff",
+   "North Carn Gloose",
+   "Botallack Head"
+  ],
+  "max_P": 79.0,
+  "s2": true
+ },
+ {
+  "batch": 13,
+  "n": 55,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 16,
+   "DRY": 14
+  },
+  "lon": [
+   -5.8211,
+   -5.5508
+  ],
+  "lat": [
+   49.935,
+   50.0905
+  ],
+  "first": "D072-01",
+  "places": [
+   "Longships",
+   "Carn Br\u00e2s",
+   "Land's End Hole",
+   "Penguarnon",
+   "Greeb Zawn",
+   "Dr Syntax's Head"
+  ],
+  "max_P": 71.0,
+  "s2": true
+ },
+ {
+  "batch": 14,
+  "n": 49,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 13,
+   "FRAG": 8,
+   "ISLET": 3
+  },
+  "lon": [
+   -5.5728,
+   -5.4082
+  ],
+  "lat": [
+   50.0534,
+   50.1372
+  ],
+  "first": "D152-01",
+  "places": [
+   "Great Hogus",
+   "Chapel Rock",
+   "Battery Rocks",
+   "Chimney Rocks",
+   "Stackhouse Cliff",
+   "Long Rock"
+  ],
+  "max_P": 81.0,
+  "s2": true
+ },
+ {
+  "batch": 15,
+  "n": 42,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 9,
+   "DRY": 8
+  },
+  "lon": [
+   -5.4193,
+   -5.2528
+  ],
+  "lat": [
+   50.0041,
+   50.115
+  ],
+  "first": "D159-01",
+  "places": [
+   "Hoe Point",
+   "Little Castle",
+   "King's Cove",
+   "Battery Point",
+   "Folly Rocks",
+   "Legereath Zawn"
+  ],
+  "max_P": 82.0,
+  "s2": true
+ },
+ {
+  "batch": 16,
+  "n": 78,
+  "groups": {
+   "ISLET": 39,
+   "MAIN": 25,
+   "DRY": 13,
+   "FRAG": 1
+  },
+  "lon": [
+   -5.2708,
+   -5.1663
+  ],
+  "lat": [
+   49.9499,
+   50.0211
+  ],
+  "first": "D156-01",
+  "places": [
+   "Crane Ledges",
+   "Lemon Point",
+   "Pengersick",
+   "Lead Pool",
+   "Holseer Cove",
+   "Vellan Head"
+  ],
+  "max_P": 91.0,
+  "s2": true
+ },
+ {
+  "batch": 17,
+  "n": 36,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 9,
+   "DRY": 2
+  },
+  "lon": [
+   -5.179,
+   -5.0504
+  ],
+  "lat": [
+   49.9929,
+   50.0925
+  ],
+  "first": "D206-01",
+  "places": [
+   "Porthkerris Cove",
+   "Lankidden Cove",
+   "Turvel",
+   "Eastern Cliff",
+   "Compass Cove",
+   "Parlour"
+  ],
+  "max_P": 50.0,
+  "s2": true
+ },
+ {
+  "batch": 18,
+  "n": 29,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 2,
+   "FRAG": 1,
+   "ISLET": 1
+  },
+  "lon": [
+   -5.2169,
+   -5.0864
+  ],
+  "lat": [
+   50.0748,
+   50.1044
+  ],
+  "first": "D203-01",
+  "places": [
+   "Ponsontuel Creek",
+   "Penarvon Cove",
+   "Mawgan Creek",
+   "Ponsence Cove",
+   "Flushing Cove",
+   "Gillan Cove"
+  ],
+  "max_P": 70.0,
+  "s2": true
+ },
+ {
+  "batch": 19,
+  "n": 26,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 1
+  },
+  "lon": [
+   -5.1956,
+   -5.0763
+  ],
+  "lat": [
+   50.085,
+   50.132
+  ],
+  "first": "I283-01",
+  "places": [
+   "Polwheveral Creek",
+   "Frenchman's Creek",
+   "Polpenwith Creek",
+   "Perran Cove",
+   "The Hutches",
+   "Porthnavas Creek"
+  ],
+  "max_P": 60.0,
+  "s2": true
+ },
+ {
+  "batch": 20,
+  "n": 33,
+  "groups": {
+   "MAIN": 25,
+   "FRAG": 4,
+   "DRY": 2,
+   "ISLET": 2
+  },
+  "lon": [
+   -5.1047,
+   -5.0298
+  ],
+  "lat": [
+   50.1235,
+   50.1835
+  ],
+  "first": "D209-01",
+  "places": [
+   "Castle Beach",
+   "Sailor's Creek",
+   "Gyllyngvase Beach",
+   "Trefusis Point",
+   "Kiln Quay",
+   "Sunny Cove"
+  ],
+  "max_P": 70.0,
+  "s2": true
+ },
+ {
+  "batch": 21,
+  "n": 41,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 8,
+   "ISLET": 5,
+   "FRAG": 3
+  },
+  "lon": [
+   -5.122,
+   -5.037
+  ],
+  "lat": [
+   50.1732,
+   50.2186
+  ],
+  "first": "D210-01",
+  "places": [
+   "Restronguet Creek",
+   "Penpol Creek",
+   "Loe Beach",
+   "Tallack's Creek",
+   "Restronguet Point",
+   "Penarrow Point"
+  ],
+  "max_P": 52.0,
+  "s2": true
+ },
+ {
+  "batch": 22,
+  "n": 29,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 4
+  },
+  "lon": [
+   -5.0582,
+   -5.0121
+  ],
+  "lat": [
+   50.2005,
+   50.2688
+  ],
+  "first": "D223-01",
+  "places": [
+   "Lambe Creek",
+   "Tom's Rock",
+   "Bar Creek",
+   "Lamouth Creek",
+   "Church Creek",
+   "Cowlands Creek"
+  ],
+  "max_P": 56.0,
+  "s2": true
+ },
+ {
+  "batch": 23,
+  "n": 27,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 1,
+   "ISLET": 1
+  },
+  "lon": [
+   -5.0257,
+   -4.9487
+  ],
+  "lat": [
+   50.2207,
+   50.2847
+  ],
+  "first": "D249-01",
+  "places": [
+   "Parson's Creek",
+   "Church Creek",
+   "Lambe Creek",
+   "Tuckingmill Creek",
+   "Bar Creek",
+   "Mill Creek"
+  ],
+  "max_P": 49.0,
+  "s2": true
+ },
+ {
+  "batch": 24,
+  "n": 31,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 5,
+   "ISLET": 1
+  },
+  "lon": [
+   -5.0386,
+   -4.9537
+  ],
+  "lat": [
+   50.1498,
+   50.2379
+  ],
+  "first": "D224-01",
+  "places": [
+   "St Just Pool",
+   "Messack Point",
+   "Channals Creek",
+   "St Just Creek",
+   "Parson's Creek",
+   "Church Creek"
+  ],
+  "max_P": 70.0,
+  "s2": true
+ },
+ {
+  "batch": 25,
+  "n": 29,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 3,
+   "ISLET": 1
+  },
+  "lon": [
+   -5.0228,
+   -4.9675
+  ],
+  "lat": [
+   50.1354,
+   50.1931
+  ],
+  "first": "D216-01",
+  "places": [
+   "Pelyn Creek",
+   "Lowlands Beach",
+   "Trethem Creek",
+   "Porth Creek",
+   "Polingey Creek",
+   "Shag Rock"
+  ],
+  "max_P": 60.0,
+  "s2": true
+ },
+ {
+  "batch": 26,
+  "n": 35,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 7,
+   "DRY": 3
+  },
+  "lon": [
+   -4.9838,
+   -4.7993
+  ],
+  "lat": [
+   50.1633,
+   50.2446
+  ],
+  "first": "D245-01",
+  "places": [
+   "Gell Point",
+   "Pencabe",
+   "Creek Stephen Point",
+   "Long Drang",
+   "The Porth",
+   "Helencane Cove"
+  ],
+  "max_P": 54.0,
+  "s2": true
+ },
+ {
+  "batch": 27,
+  "n": 36,
+  "groups": {
+   "MAIN": 25,
+   "FRAG": 4,
+   "ISLET": 4,
+   "DRY": 3
+  },
+  "lon": [
+   -4.8181,
+   -4.7438
+  ],
+  "lat": [
+   50.2115,
+   50.3387
+  ],
+  "first": "D269-01",
+  "places": [
+   "Colona Beach",
+   "Gorran Haven Beach",
+   "Scurvella Point",
+   "Polrudden Cove",
+   "Portmellon Cove",
+   "Maen Thomas"
+  ],
+  "max_P": 67.0,
+  "s2": true
+ },
+ {
+  "batch": 28,
+  "n": 41,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 8,
+   "DRY": 5,
+   "FRAG": 3
+  },
+  "lon": [
+   -4.7597,
+   -4.6252
+  ],
+  "lat": [
+   50.3042,
+   50.3709
+  ],
+  "first": "D272-01",
+  "places": [
+   "Platt",
+   "Bream Rocks",
+   "Peel Cove",
+   "Brandis Rocks",
+   "Par Sands",
+   "Mixtow Pill"
+  ],
+  "max_P": 50.0,
+  "s2": true
+ },
+ {
+  "batch": 29,
+  "n": 42,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 11,
+   "FRAG": 3,
+   "ISLET": 3
+  },
+  "lon": [
+   -4.6718,
+   -4.6047
+  ],
+  "lat": [
+   50.3531,
+   50.4152
+  ],
+  "first": "D286-01",
+  "places": [
+   "Mendy Pill",
+   "Manely Pill",
+   "St Cyric's Creek",
+   "Ethy Rock",
+   "Cliff Pill",
+   "Bodmin Pill"
+  ],
+  "max_P": 52.0,
+  "s2": true
+ },
+ {
+  "batch": 30,
+  "n": 33,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 5,
+   "ISLET": 3
+  },
+  "lon": [
+   -4.6461,
+   -4.5175
+  ],
+  "lat": [
+   50.3169,
+   50.3675
+  ],
+  "first": "D285-01",
+  "places": [
+   "St Cyric's Creek",
+   "Great Lantic Beach",
+   "Nealand Point",
+   "Colors Cove",
+   "Shag Rock",
+   "Palace Cove"
+  ],
+  "max_P": 73.0,
+  "s2": true
+ },
+ {
+  "batch": 31,
+  "n": 61,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 18,
+   "FRAG": 9,
+   "ISLET": 9
+  },
+  "lon": [
+   -4.5279,
+   -4.4396
+  ],
+  "lat": [
+   50.3239,
+   50.387
+  ],
+  "first": "D313-01",
+  "places": [
+   "Limmicks",
+   "The Blind",
+   "Bridge Rocks",
+   "Hore Stone",
+   "Wallace Beach",
+   "Hannafore Point"
+  ],
+  "max_P": 46.0,
+  "s2": true
+ },
+ {
+  "batch": 32,
+  "n": 29,
+  "groups": {
+   "MAIN": 25,
+   "DRY": 2,
+   "ISLET": 2
+  },
+  "lon": [
+   -4.4634,
+   -4.2063
+  ],
+  "lat": [
+   50.2974,
+   50.3771
+  ],
+  "first": "D329-01",
+  "places": [
+   "Seaton Beach",
+   "Downderry Beach",
+   "Sand Pool",
+   "Sharrow Cliff",
+   "Colmer Rocks",
+   "Tregantle Cliff"
+  ],
+  "max_P": 63.0,
+  "s2": true
+ },
+ {
+  "batch": 33,
+  "n": 29,
+  "groups": {
+   "MAIN": 25,
+   "FRAG": 3,
+   "ISLET": 1
+  },
+  "lon": [
+   -4.2409,
+   -4.1617
+  ],
+  "lat": [
+   50.311,
+   50.369
+  ],
+  "first": "F356-01",
+  "places": [
+   "Pier Cellars",
+   "Inner Penlee Point",
+   "Palmer Point",
+   "Penlee Point",
+   "Inswork Point",
+   "Millbrook Lake"
+  ],
+  "max_P": 56.0,
+  "s2": true
+ },
+ {
+  "batch": 34,
+  "n": 32,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 4,
+   "FRAG": 3
+  },
+  "lon": [
+   -4.3132,
+   -4.187
+  ],
+  "lat": [
+   50.3581,
+   50.3976
+  ],
+  "first": "F361-01",
+  "places": [
+   "Polbathic Lake",
+   "Black Rock",
+   "Deadman's Point",
+   "Sango Island",
+   "Erth Island",
+   "Wacker Lake"
+  ],
+  "max_P": 60.0,
+  "s2": true
+ },
+ {
+  "batch": 35,
+  "n": 29,
+  "groups": {
+   "MAIN": 25,
+   "FRAG": 2,
+   "ISLET": 2
+  },
+  "lon": [
+   -4.3306,
+   -4.2731
+  ],
+  "lat": [
+   50.3773,
+   50.4204
+  ],
+  "first": "F367-01",
+  "places": [
+   "Sconner Lake",
+   "Erth Island",
+   "Polbathic Lake"
+  ],
+  "max_P": 42.0,
+  "s2": true
+ },
+ {
+  "batch": 36,
+  "n": 37,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 10,
+   "FRAG": 2
+  },
+  "lon": [
+   -4.295,
+   -4.2283
+  ],
+  "lat": [
+   50.3727,
+   50.4343
+  ],
+  "first": "F378-01",
+  "places": [
+   "Ince Point",
+   "Polbathic Lake",
+   "Black Rock",
+   "Sconner Lake",
+   "Shillingham Point",
+   "Marsh Coombe"
+  ],
+  "max_P": 42.0,
+  "s2": true
+ },
+ {
+  "batch": 37,
+  "n": 38,
+  "groups": {
+   "MAIN": 25,
+   "ISLET": 6,
+   "FRAG": 5,
+   "DRY": 2
+  },
+  "lon": [
+   -4.2415,
+   -4.1944
+  ],
+  "lat": [
+   50.3891,
+   50.4635
+  ],
+  "first": "D333-01",
+  "places": [
+   "Skinham Creek",
+   "Skinham Point",
+   "Kiln Bay",
+   "Neal Point",
+   "Mill Pond",
+   "Marsh Coombe"
+  ],
+  "max_P": 60.0,
+  "s2": true
+ },
+ {
+  "batch": 38,
+  "n": 23,
+  "groups": {
+   "MAIN": 21,
+   "DRY": 1,
+   "FRAG": 1
+  },
+  "lon": [
+   -4.2554,
+   -4.1756
+  ],
+  "lat": [
+   50.4508,
+   50.5216
+  ],
+  "first": "D339-01",
+  "places": [
+   "Pleasure Rock",
+   "Colly Cliff",
+   "Morwell Rocks"
+  ],
+  "max_P": 52.0,
+  "s2": true
+ },
+ {
+  "batch": 39,
+  "n": 47,
+  "groups": {
+   "SCILLY": 29,
+   "DRY-SCILLY": 18
+  },
+  "lon": [
+   -6.3171,
+   -6.2685
+  ],
+  "lat": [
+   49.9528,
+   49.9876
+  ],
+  "first": "DS106-01",
+  "places": [
+   "Dog Ledge",
+   "Round Rock",
+   "Pernagie Isle",
+   "Round Rock Ledge",
+   "Southward Carn",
+   "Shag Point"
+  ],
+  "max_P": 76.0,
+  "s2": true
+ },
+ {
+  "batch": 40,
+  "n": 41,
+  "groups": {
+   "SCILLY": 26,
+   "DRY-SCILLY": 15
+  },
+  "lon": [
+   -6.3543,
+   -6.3048
+  ],
+  "lat": [
+   49.9481,
+   49.9843
+  ],
+  "first": "DS060-01",
+  "places": [
+   "Beef Neck",
+   "Rascal's Ledge",
+   "East Landing",
+   "Round Island",
+   "Tide Rock",
+   "Peashopper Island"
+  ],
+  "max_P": 82.0,
+  "s2": true
+ },
+ {
+  "batch": 41,
+  "n": 39,
+  "groups": {
+   "SCILLY": 28,
+   "DRY-SCILLY": 11
+  },
+  "lon": [
+   -6.3758,
+   -6.3328
+  ],
+  "lat": [
+   49.939,
+   49.9737
+  ],
+  "first": "DS045-01",
+  "places": [
+   "Plump Rocks",
+   "Merrick Island",
+   "Little Mussel Rock",
+   "Green Bay",
+   "Little High Rock",
+   "Great Rushy Bay Ledge"
+  ],
+  "max_P": 71.0,
+  "s2": true
+ },
+ {
+  "batch": 42,
+  "n": 24,
+  "groups": {
+   "DRY-SCILLY": 15,
+   "SCILLY": 9
+  },
+  "lon": [
+   -6.3028,
+   -6.2614
+  ],
+  "lat": [
+   49.9375,
+   49.9714
+  ],
+  "first": "DS080-01",
+  "places": [
+   "Middle Damasinnas",
+   "Arthur Neck",
+   "Great Ledge",
+   "Great Ganinick",
+   "Great Damasinnas",
+   "Little Ganinick"
+  ],
+  "max_P": 66.0,
+  "s2": true
+ },
+ {
+  "batch": 43,
+  "n": 28,
+  "groups": {
+   "SCILLY": 22,
+   "DRY-SCILLY": 6
+  },
+  "lon": [
+   -6.2746,
+   -6.2385
+  ],
+  "lat": [
+   49.9379,
+   49.9722
+  ],
+  "first": "DS082-01",
+  "places": [
+   "Innisvouls Neck",
+   "The Hole",
+   "Menawethan Neck",
+   "Eastern Isles",
+   "Menawethan",
+   "Little Innisvouls"
+  ],
+  "max_P": 86.0,
+  "s2": true
+ },
+ {
+  "batch": 44,
+  "n": 28,
+  "groups": {
+   "SCILLY": 20,
+   "DRY-SCILLY": 8
+  },
+  "lon": [
+   -6.4003,
+   -6.3631
+  ],
+  "lat": [
+   49.9272,
+   49.963
+  ],
+  "first": "DS043-01",
+  "places": [
+   "Norrard Rocks",
+   "Middle Ledge",
+   "Round Rock",
+   "Outer Neck of Gerwick",
+   "Little Maiden Bower",
+   "Maiden Bower"
+  ],
+  "max_P": 79.0,
+  "s2": true
+ },
+ {
+  "batch": 45,
+  "n": 28,
+  "groups": {
+   "DRY-SCILLY": 18,
+   "SCILLY": 10
+  },
+  "lon": [
+   -6.339,
+   -6.2855
+  ],
+  "lat": [
+   49.9191,
+   49.958
+  ],
+  "first": "DS031-01",
+  "places": [
+   "Pendrathen",
+   "Round Rock",
+   "Carn Near",
+   "Bathinghouse Porth",
+   "Sandy Bar",
+   "Innisidgen Carn"
+  ],
+  "max_P": 50.0,
+  "s2": true
+ },
+ {
+  "batch": 46,
+  "n": 26,
+  "groups": {
+   "DRY-SCILLY": 16,
+   "SCILLY": 10
+  },
+  "lon": [
+   -6.3727,
+   -6.3294
+  ],
+  "lat": [
+   49.9188,
+   49.947
+  ],
+  "first": "DS020-01",
+  "places": [
+   "Stony Island",
+   "West Porth Ledge",
+   "Green Island",
+   "Shag Point",
+   "Bar Point",
+   "Little Minalto"
+  ],
+  "max_P": 70.0,
+  "s2": true
+ },
+ {
+  "batch": 47,
+  "n": 40,
+  "groups": {
+   "SCILLY": 35,
+   "DRY-SCILLY": 5
+  },
+  "lon": [
+   -6.3334,
+   -6.2707
+  ],
+  "lat": [
+   49.8982,
+   49.9381
+  ],
+  "first": "DS019-01",
+  "places": [
+   "Town Beach",
+   "Porth Loo",
+   "Newfoundland Rocks",
+   "Porth Loggos",
+   "St Mary's Pool",
+   "Steval"
+  ],
+  "max_P": 81.0,
+  "s2": true
+ },
+ {
+  "batch": 48,
+  "n": 62,
+  "groups": {
+   "SCILLY": 50,
+   "DRY-SCILLY": 12
+  },
+  "lon": [
+   -6.388,
+   -6.3227
+  ],
+  "lat": [
+   49.8765,
+   49.9072
+  ],
+  "first": "DS007-01",
+  "places": [
+   "North West Porth",
+   "Flat Ledge",
+   "Menrounds",
+   "Annet",
+   "Buccabu",
+   "Hellweathers Neck"
+  ],
+  "max_P": 79.0,
+  "s2": true
+ },
+ {
+  "batch": 49,
+  "n": 13,
+  "groups": {
+   "SCILLY": 12,
+   "DRY-SCILLY": 1
+  },
+  "lon": [
+   -6.4504,
+   -6.4006
+  ],
+  "lat": [
+   49.8643,
+   49.8847
+  ],
+  "first": "DS003-01",
+  "places": [
+   "Sprowse's Brow",
+   "Wee",
+   "Codnors Rocks",
+   "Great Crebawethan",
+   "Crebinicks",
+   "Retarrier Ledges"
+  ],
+  "max_P": 67.0,
+  "s2": true
+ },
+ {
+  "batch": 50,
+  "n": 32,
+  "groups": {
+   "SCILLY": 27,
+   "DRY-SCILLY": 5
+  },
+  "lon": [
+   -6.4151,
+   -6.3625
+  ],
+  "lat": [
+   49.8591,
+   49.8808
+  ],
+  "first": "DS001-01",
+  "places": [
+   "Black Rock",
+   "Shoal Neck",
+   "Vink",
+   "Dry Splat",
+   "Hole of Gorregan",
+   "Camperdown"
+  ],
+  "max_P": 68.0,
+  "s2": true
+ }
+]
