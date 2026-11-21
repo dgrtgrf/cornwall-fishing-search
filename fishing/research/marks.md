@@ -1,6 +1,6 @@
 # Workstream 6 - Known shore marks (merged list)
 
-Merged from 14 sweeps (`fishing/research/marks/*.md` + `.jsonl`, 10 geographic sectors + 4 thematic sweeps, run 2026-11-21 16:06-16:27 UTC). **525 raw mark records -> 308 distinct marks** after de-duplication (`fishing/tools/marks/merge_marks.py`; full merged records with every field and source URL in `marks_merged.jsonl`). Evidence quality as graded by the sweep agents: {'thin': 213, 'moderate': 93, 'good': 2}.
+Merged from 14 sweeps (`fishing/research/marks/*.md` + `.jsonl`, 10 geographic sectors + 4 thematic sweeps, run 2026-11-21 16:06-16:27 UTC). **530 raw mark records -> 308 distinct marks** after de-duplication (`fishing/tools/marks/merge_marks.py`; full merged records with every field and source URL in `marks_merged.jsonl`). Evidence quality as graded by the sweep agents: {'thin': 213, 'moderate': 93, 'good': 2}.
 
 **Read this first - limits of the list.** (1) Most per-mark descriptions come from one aggregator site (wheresthefish.uk, grade C; its text is templated and its species scores are modelled, not catch records). (2) Sea Angler, World Sea Fishing forum, Planet Sea Fishing, PressReader and most Facebook sources were blocked to automated access, so the best venue literature was NOT read. (3) Very few marks have a dated late-November catch attached. (4) Aspect, depth and wind/swell preferences are frequently the sweep agent's inference (grade D) - the per-sector files say which. The physical assessment of every kilometre of shore is in `coastline.md`; this list is the documentary layer only.
 
@@ -149,7 +149,7 @@ Columns: id, name, type, lat/lon (confidence), late-November species named by so
 | K121 | Tater-du | headland | 50.0524, -5.5774 (medium) | - | thin | 1 (A) | W1 |
 | K122 | St Loy Cove | steep shingle beach | 50.0514, -5.6015 (medium) | - | thin | 1 (C) | W1 |
 | K123 | Boscawen Point | headland | 50.0502, -5.5905 (medium) | - | thin | 1 (C) | W1 |
-| K124 | Penberth Cove | rock mark | 50.0473, -5.6292 (medium) | ling, pollack | good | 5 (A/B/C) | W1, T3 |
+| K124 | Penberth Cove | rock mark | 50.0473, -5.6292 (medium) | ling, pollack | good | 9 (A/B/C) | W1, T3, G2 |
 | K125 | Pedn Vounder | surf beach | 50.0436, -5.6409 (medium) | bass | thin | 1 (C) | W1, T4 |
 | K126 | Porthcurno beach | surf beach | 50.0430, -5.6510 (medium) | whiting, dogfish, bass | moderate | 3 (A/B/C) | W1, T4 |
 | K127 | Logan Rock (Treryn Dinas) | headland | 50.0409, -5.6369 (medium) | pollack, conger, bull huss | thin | 5 (A/B/C) | W1, T3 |
@@ -172,22 +172,22 @@ Columns: id, name, type, lat/lon (confidence), late-November species named by so
 
 | ID | Mark | Type | Lat, Lon (conf.) | Late-Nov species (per sources) | Quality | Sources (grades) | Sweeps |
 |---|---|---|---|---|---|---|---|
-| K142 | Long Rock / Eastern Green beach | surf beach | 50.1283, -5.4999 (medium) | whiting, dab, flounder, plaice, squid, bass | moderate | 3 (B/C) | S1, T4 |
+| K142 | Long Rock / Eastern Green beach | surf beach | 50.1283, -5.4999 (medium) | whiting, dab, flounder, plaice, squid, bass, plaice (first pass) | moderate | 4 (B/C) | S1, T4, G2 |
 | K143 | Marazion beach | surf beach | 50.1246, -5.4776 (medium) | whiting, plaice, dab, bass | thin | 1 (C) | S1, T4 |
 | K144 | St Michael's Mount Causeway | other | 50.1199, -5.4760 (medium) | bass, flounder | thin | 1 (C) | S1, T2 |
 | K145 | Albert Pier, Penzance | pier/breakwater/quay | 50.1183, -5.5297 (medium) | flounder, whiting, herring, cod, gobies, rockling, pouting, conger | moderate | 6 (B/C) | S1, T2 |
 | K146 | Battery Rocks | rock mark | 50.1144, -5.5312 (medium) | pouting, conger, pollack, whiting, plaice | thin | 3 (B/C) | S1 |
-| K147 | Perranuthnoe beach | surf beach | 50.1120, -5.4417 (medium) | whiting, dogfish, squid, bass | moderate | 2 (B/C) | S1, T4 |
+| K147 | Perranuthnoe beach | surf beach | 50.1120, -5.4417 (medium) | whiting, dogfish, whiting (first pass), dogfish (first pass), squid, bass | moderate | 5 (B/C) | S1, T4, G2 |
 | K148 | Kenneggy Sands (Keneggy) | surf beach | 50.1042, -5.4117 (medium) | dogfish, dab, bass | thin | 1 (C) | S1, T4 |
 | K149 | Newlyn South Pier | pier/breakwater/quay | 50.1029, -5.5430 (medium) | conger, pouting, pollack, rockling, red gurnard | moderate | 5 (B/C) | S1, T2 |
-| K150 | Praa Sands | surf beach | 50.1009, -5.3850 (medium) | whiting, dab, plaice, bass | moderate | 1 (C) | S1, T4 |
+| K150 | Praa Sands | surf beach | 50.1009, -5.3850 (medium) | whiting, dab, plaice, sole/flounder (oct 2024 evidence only), whiting (first pass), bass | moderate | 2 (B/C) | S1, T4, G2 |
 | K151 | Prussia Cove (Bessy's Cove) | rock mark | 50.1005, -5.4173 (medium) | pollack, conger, pouting | moderate | 3 (B/C) | S1 |
 | K152 | Cudden Point | deep-water rock mark | 50.0992, -5.4269 (medium) | conger, pouting, pollack | moderate | 5 (A/B/C) | S1, T3 |
 | K153 | Piskies Cove | rock mark | 50.0990, -5.4223 (medium) | pollack | thin | 1 (C) | S1 |
 | K154 | Rinsey Cove | rock mark | 50.0934, -5.3666 (medium) | pouting, rockling, conger | thin | 1 (C) | S1 |
 | K155 | Trewavas Head | headland | 50.0895, -5.3622 (medium) | conger, pouting | moderate | 2 (B/C) | S1 |
 | K156 | Porthleven Pier & harbour | pier/breakwater | 50.0818, -5.3181 (medium) | rockling, poor cod, pouting, pollack, whiting, dogfish, dab, plaice, flounder, conger(occasional) | moderate | 6 (B/C) | S1, T2, T4 |
-| K157 | Loe Bar | steep shingle beach | 50.0687, -5.2945 (medium) | whiting, cod, dogfish, bass, cod (b snippet; d for 22 nov) | moderate | 3 (B/C) | S1, T4 |
+| K157 | Loe Bar | steep shingle beach | 50.0687, -5.2945 (medium) | whiting, cod, dogfish, lesser spotted dogfish, small-eyed ray (one nov 2025 fish), bass, cod (b snippet; d for 22 nov) | moderate | 8 (A/B/C) | S1, T4, G2 |
 | K158 | Gunwalloe Fishing Cove | sheltered beach | 50.0544, -5.2792 (medium) | whiting, conger, bass | thin | 1 (C) | S1, T4 |
 | K159 | Dollar Cove | rock mark | 50.0400, -5.2714 (medium) | rockling, dogfish, bass | thin | 1 (C) | S1, T4 |
 | K160 | Church Cove, Gunwalloe | sheltered beach | 50.0383, -5.2675 (medium) | dogfish, pouting, bass | thin | 1 (C) | S1, T4 |
@@ -387,5 +387,70 @@ Columns: id, name, type, lat/lon (confidence), late-November species named by so
 
 ## Documentation gaps reported by the sweeps (stretches with NO angling documentation found)
 
-These are listed in each sweep file under "gaps" / "NOT FOUND"; consolidated list to be completed at the Phase 1 gap-fill round. The 1 km coastline assessment covers them physically regardless.
+Copied verbatim from the closing section of each sweep file. The 1 km coastline assessment (`coastline.md`) covers every one of these stretches physically regardless.
+
+### North coast: Devon border to Camel mouth (`marks/N1.md`)
+
+- No documentation found for: Millook, Dizzard, Varley Head, Kellan Head, Doyden, Carnweather, Bude canal sea-lock (Nominatim found no points for most; no angling pages found). wheresthefish has a Millook town page (raw saved) but no coordinates extracted.
+- Stretches with no angling evidence: Millook to The Strangles (all of the Dizzard/Cambeak cliffs); Rocky Valley to Barras Nose; Backways Cove to Port Gaverne (Tregardock); Port Quin to Lundy Bay (Doyden/Carnweather).
+- Sea Angler spot pages (seaangler.co.uk) blocked by Cloudflare; fishingmagic, gethooked, pressreader returned JS walls/403.
+- No catch reports, record lists naming venue, or November-specific reports found for any mark. Every late-November claim is D (inference).
+- Contradiction: none direct; Visit Bude says winter whiting/codling for Bude without naming marks.
+
+### Camel estuary to Newquay (`marks/N2.md`)
+
+Porthilly, Cant Cove, Dinham, Amble/Trewornan, Camel above Wadebridge tidal limit (only a forum snippet on mullet at Wadebridge and a trail dam), St Saviour's Point, Harbour Cove/Tregirls, Old Town Cove, Pinkson Creek, Butter Hole, Gunver Head, Trevone-Cataclews stretch, Cataclews Point, Merope Rocks, Dinas Head (Cornwall; searches returned only Wales), Trevelgue Head / Porth Island, Old Dane (separately), Gulland Rock, Newland Island, Quies, Newquay South Quay and harbour south side (no separate evidence), Pentire Point East beyond the generic entries. Cataclews/Butter Hole/Gunver/Merope/Gulland/Newland/Quies/Dinas Head have no coordinates here (Nominatim returned nothing usable); not invented.
+
+### Crantock to St Ives (`marks/N3.md`)
+
+No explicit gap section in this sweep file.
+
+### West Penwith (St Ives to Mousehole) (`marks/W1.md`)
+
+Hor Point, Pen Enys, The Carracks, Pendour Cove, Wicca Pool, River Cove, Bosigran, Levant, Botallack, Kenidjack, Porth Ledden, The Brisons, Porth Nanven, Carn Les Boel, Armed Knight, Enys Dodnan/Pordenack, Longships, Porthguarnon, Tater-du, St Clement's Isle, Wolf Rock, Runnel Stone. Not searched in depth: forums (worldseafishing, UK Sea Fishing), CFSA lists, Facebook/YouTube.
+
+### Mount's Bay (Newlyn to Mullion) (`marks/S1.md`)
+
+Newlyn north pier, Sandy Cove, Tolcarne, Wherrytown, Jubilee Pool, Lighthouse Pier, Penzance wet dock (beyond Albert Pier), Top Tieb, St Michael's Mount island rocks/harbour, The Greeb, Trenow Cove, Hoe Point, Lesceave (separately), Halzephron, Poldhu (searched, nothing), Tremearne, Breageside (separately). Also no CFSA/BCC record lists or dated catch reports naming these venues. Aspects are inferred (D). Note: aspect for Dollar/Church/Fishing Cove west-facing per WTF text (Fishing Cove) else inferred.
+
+### The Lizard and Helford (`marks/S2.md`)
+
+Vellan Head, Gew-graze (Soapy Cove), Pentreath, Old Lizard Head/Polpeor (beyond Lizard Point), Bumble Rock, Kilcobben, Parn Voose, Poltesco, Eastern Cliff, Carrick Luz, Lankidden, Downas Cove, Black Head, Chynhalls Point, Dolor Point/Mears beach (beyond Coverack), Dean Quarry, Manacle Point/The Manacles (only a boat-bass trade article titled 'Bass fishing on the Manacles' surfaced, intrafish.com, not read), Flushing/Dennis Head, Ponsence, Bosahan, Frenchman's Creek, Tremayne Quay, Polwheveral, Porth Navas, Helford village, Polgwidden, Toll Point, Mawnan Shear. Mullion Island: no fishing evidence.
+Sources blocked/unavailable: worldseafishing.com (JS wall), fishingmagic, visitcornwall.tv (bot check), DuckDuckGo (captcha), seaangler.co.uk (403), issuu/pressreader (no text), talkseafishing Helford Passage thread (empty). britishseafishing.co.uk and cornwalls.co.uk/intocornwall have nothing for this sector.
+Search rounds: round 1 (4 queries) and round 2 (3 queries) added no new marks beyond wtf list.
+
+### Falmouth Bay and the Fal (`marks/S3.md`)
+
+No explicit gap section in this sweep file.
+
+### Roseland to Fowey (`marks/S4.md`)
+
+No explicit gap section in this sweep file.
+
+### Polruan to the Tamar (`marks/S5.md`)
+
+No explicit gap section in this sweep file.
+
+### Isles of Scilly (`marks/SC.md`)
+
+No documentation: Rat Island, Porthcressa, Carn Morval, Halangy, Innisidgen, Watermill, Morning Point, Woolpack, Pentle Bay, Piper's Hole, Rushy Bay, Great Par, Anneka's Quay, Droppy Nose, Great Bay/Lower Town/Par Beach, Periglis, Wingletang, Samson, Annet, Western Rocks, Norrard Rocks (Mincarlo/Maiden Bower named by Tresco only), Eastern Isles, Round Island, St Helen's, Tean, Men-a-vaur, Hanjague, Seven Stones. No CFSA/IFCA venue records; no tide/forecast gathered. Late-Nov evidence: 16, 18, 30 Nov 2012 and 10-14 Nov 2013 blog posts only.
+
+### Thematic: estuaries (`marks/T1.md`)
+
+No documentation at all: Hayle estuary/Copperhouse; Restronguet/Devoran; Penryn, Mylor, Pill, Percuil creeks; Truro/Tresillian marks; Lynher/Tiddy/Seaton; Millbrook and St John's Lakes; Camel mark names; Red River mouth; Pentewan river reaches; Fowey tributary marks. Fetch failures: PressReader 403, Everand JS error, talkseafishing 404.
+
+### Thematic: harbours and piers (`marks/T2.md`)
+
+No explicit gap section in this sweep file.
+
+### Thematic: deep-water rock / islands / obscure (`marks/T3.md`)
+
+Bude to Tintagel (Hartland-Tintagel cliffs: Boscastle, Meachard, Tintagel Island, Trebarwith, Port Isaac); Gull Rocks at Portreath/Holywell/Veryan; Chapel Rock, Bawden Rocks, The Carracks, The Quies, Gulland, Newland, The Mouls; St Michael's Mount; Black Rock Falmouth; Wolf Rock, Longships, Brisons, Runnel Stone as shore fishing; Scilly outer/western rocks (Bishop Rock, Western Rocks, Annet, Gugh, Giant's Castle, Porth Hellick, Garrison); Gunwalloe, Loe Bar rock, Porthleven rocks; Dodman Point; Pendeen/Bosigran/Cape Cornwall cliff-foot ledges; British Conger Club/CFSA lists; old angling books.
+
+### Thematic: surf and open beaches (`marks/T4.md`)
+
+- Isles of Scilly beaches (Porthcressa, Par, Pelistry, Great Bay St Martin's, Old Grimsby etc.): NO source found in this stream (wtf Cornwall list does not cover Scilly).
+- Sennen/Whitesand Bay, Gwithian-Godrevy detail beyond wtf, Poldhu, Church Cove Gunwalloe beyond wtf, Porthcothan-Treyarnon detail, Crackington/Millook beaches, Pentewan-Gorran Haven, Seaton-Downderry reports: wtf template text only.
+- Sea Angler spot pages, Fishbrain, CFSA, club match reports, forums: not read (blocked / search exhausted).
+- Per-beach swell height and wind direction preferences, sandbar/gutter positions: NOT FOUND (wtf gives generic phrases only).
 

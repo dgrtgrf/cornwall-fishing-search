@@ -97,7 +97,18 @@ for m in merged:
     ll = f"{m['lat']:.4f}, {m['lon']:.4f} ({m['coord_confidence']})" if m['lat'] is not None and m['lon'] is not None else 'no coordinate'
     A(f"| {m['mark_id']} | {m['name']} | {m['type']} | {ll} | {', '.join(m['late_nov_species'][:10]) or '-'} | {m['data_quality']} | {m['n_sources']} ({'/'.join(m['source_grades']) or '-'}) | {', '.join(m['sector_files'])} |")
 A('\n## Documentation gaps reported by the sweeps (stretches with NO angling documentation found)\n')
-A('These are listed in each sweep file under "gaps" / "NOT FOUND"; consolidated list to be completed at the Phase 1 gap-fill round. The 1 km coastline assessment covers them physically regardless.\n')
+A('Copied verbatim from the closing section of each sweep file. The 1 km coastline assessment (`coastline.md`) covers every one of these stretches physically regardless.\n')
+for fp in sorted(glob.glob(str(R/'marks/*.md')), key=lambda x: order.get(pathlib.Path(x).stem, 50)):
+    key = pathlib.Path(fp).stem; lines = open(fp).read().split('\n'); start = None
+    for i, l in enumerate(lines):
+        if re.match(r'^#+ ', l) and re.search(r'gaps|not found|no documentation', l, re.I) and 'Gap Point' not in l: start = i
+    A(f'### {SECT.get(key, "Second-pass gap-fill " + key)} (`marks/{key}.md`)\n')
+    if start is None: A('No explicit gap section in this sweep file.\n'); continue
+    body = []
+    for l in lines[start+1:]:
+        if re.match(r'^#{1,2} ', l): break
+        body.append(l)
+    A('\n'.join(body[:70]).strip() + '\n')
 (R/'marks.md').write_text('\n'.join(o) + '\n')
 by = collections.Counter(m['sector_files'][0] for m in merged)
 print('merged marks', len(merged), dict(by)); print('quality', dict(cnt), '| no coords', sum(1 for m in merged if m['lat'] is None), '| coord flags', sum(1 for m in merged if m['coord_flag']))
