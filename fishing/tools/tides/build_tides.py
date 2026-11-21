@@ -13,7 +13,13 @@ STATIONS = [  # id, name, sector(s) it is the reference for
  ('0014B','Cargreen'),('0014C','Cotehele Quay'),('0089','Dover (stream reference)'),('0496','Milford Haven (stream reference)')]
 stamp = dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%MZ')
 data = {}
+import glob as _g
+REUSE = len(sys.argv) > 2 and sys.argv[2] == 'reuse'
 for sid, name in STATIONS:
+    if REUSE:
+        prev = sorted(_g.glob(str(RAW/f'easytide_{sid}_*.json')))
+        if prev:
+            data[sid] = json.load(open(prev[-1])); stamp = prev[-1].split('_')[-1].replace('.json',''); continue
     url = f'https://easytide.admiralty.co.uk/Home/GetPredictionData?stationId={sid}'
     for attempt in range(3):
         try:
@@ -104,7 +110,8 @@ for sid, name in STATIONS:
         if t.strftime('%Y-%m-%d') in ('2026-11-21','2026-11-22','2026-11-23') and (h is None or at or ah):
             W(f'- {name}: {k} {t:%d %b %H:%M} height={h} approxTime={at} approxHeight={ah}'); n += 1
 if n == 0: W('- none')
-(ROOT/'fishing/research/tides_numeric.part.md').write_text('\n'.join(out)+'\n')
+add = ROOT/'fishing/tools/tides/tides_addendum.md'
+(ROOT/'fishing/research/tides.md').write_text('\n'.join(out)+'\n' + (add.read_text() if add.exists() else ''))
 json.dump({sid: {'name': dict(STATIONS)[sid], 'events': [(t.isoformat(), k, h) for t,k,h,_,_ in allev(sid)], 'series': [(t.isoformat(), h) for t,h in series(sid)]} for sid in data}, open(RAW/f'easytide_all_{stamp}.json','w'))
 print('stations ok', len(data), 'of', len(STATIONS), 'stamp', stamp)
 for sid in ('0002','0545','0005','0014','0001','0543','0089'):
